@@ -1,0 +1,22 @@
+language: generic
+matrix:
+  notifications:
+    email: false
+  include:
+    - os: linux
+      sudo: required
+      env: COMPILER_NAME=gcc CXX=g++-5 CC=gcc-5
+      addons:
+        apt:
+          packages:
+            - g++-5
+            - cmake
+          sources: &sources
+            - llvm-toolchain-precise
+            - ubuntu-toolchain-r-test
+          
+      
+script:
+  - mkdir build && cd build
+  - cmake .. && make
+  - ./tests -s -r compact
