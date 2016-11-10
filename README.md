@@ -1,5 +1,3 @@
 # Sem3Lab3
 
-<a href="https://ci.appveyor.com/project/1998bagaev/sem3lab3">...</a> == $0
- 
-   
+[![Build status](https://ci.appveyor.com/api/projects/status/l0nwebsyx..)](https://ci.appveyor.com/project/1998bagaev/sem3lab3)
